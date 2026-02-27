@@ -3,15 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Docentes Brown — Asistencia Escolar</title>
+  <title>Asistencia — Preceptoría</title>
   <link rel="stylesheet" href="./styles.css" />
   <link rel="manifest" href="./manifest.webmanifest" />
   <meta name="theme-color" content="#24496e" />
-  <meta name="description" content="App de asistencia y reportes escolares con estética institucional Docentes Brown." />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="apple-touch-icon" href="./icons/icon-192.png" />
-  <link rel="preload" as="image" href="./branding/dossier-docentes-brown.png" />
 
 </head>
 <body>
@@ -19,10 +17,10 @@
     <header class="topbar">
       <button id="btnMenu" class="icon-btn" aria-label="Menú" hidden>☰</button>
       <div class="brand">
-        <div class="brand-mark" aria-hidden="true"><img src="./branding/dossier-docentes-brown.png" alt="" /></div>
+        <div class="dot"></div>
         <div>
           <div class="brand-title">Docentes Brown</div>
-          <div class="brand-sub">Asistencia Escolar · Consultoría Educativa</div>
+          <div class="brand-sub">Consultora Educativa · Asistencia</div>
         </div>
       </div>
 
@@ -50,7 +48,7 @@
           <button class="icon-btn" data-drawer-close="1" aria-label="Cerrar">✕</button>
         </div>
         <nav id="drawerNav" class="drawer-nav"></nav>
-        <div class="drawer-foot muted">Plataforma de asistencia · uso institucional</div>
+        <div class="drawer-foot muted">Seleccioná una sección</div>
       </aside>
     </div>
 
@@ -59,12 +57,8 @@
       <!-- LOGIN -->
       <section id="viewLogin" class="view">
         <div class="card login-card">
-          <div class="login-brand-hero">
-            <img src="./branding/dossier-docentes-brown.png" alt="Docentes Brown Consultoría Educativa" />
-          </div>
-          <div class="login-badge">Solución profesional para instituciones educativas</div>
-          <h1>Ingresar</h1>
-          <p class="muted">Entrá con tu <b>email</b> y tu <b>PIN</b> para gestionar asistencia, alertas y reportes con imagen institucional.</p>
+          <h1>Asistencia Docentes Brown</h1>
+          <p class="muted">Entrá con tu <b>email</b> y tu <b>PIN</b>.</p>
 
           <label class="field">
             <span>Email</span>
@@ -411,7 +405,7 @@
     </main>
 
     <footer class="footer muted">
-      <span><b>Docentes Brown</b> · Asistencia Escolar para instituciones privadas · Diseño y acompañamiento pedagógico</span>
+      <span class="brand-footer">Docentes Brown</span> <span>· Consultora Educativa · App de asistencia</span>
     </footer>
   </div>
 

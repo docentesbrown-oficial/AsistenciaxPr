@@ -1,12 +1,12 @@
 {
-  "name": "Docentes Brown — Asistencia Escolar",
-  "short_name": "DB Asistencia",
+  "name": "Asistencia — Preceptoría",
+  "short_name": "Asistencia",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f3efdc",
   "theme_color": "#24496e",
-  "description": "Registro de asistencia, alertas y reportes escolares con identidad Docentes Brown.",
+  "description": "Registro de asistencia y reportes para preceptoría.",
   "icons": [
     {
       "src": "./icons/icon-192.png",

@@ -16,6 +16,9 @@
   /* Surfaces */
   --bg:#f3efdc;
   --surface: rgba(255,255,255,.82);
+  --navy-2:#1d3c63;
+  --sky:#a7c5ea;
+  --paper:#f5f2e7;
   --card:#ffffff;
 
   /* Text */
@@ -59,11 +62,11 @@ p{margin:0}
   display:flex; gap:14px; align-items:center;
   padding:14px 16px;
   border-bottom:1px solid var(--line);
-  background:rgba(243,239,220,.78);
+  background:rgba(248,245,235,.84);
   backdrop-filter: blur(14px);
 }
 
-.brand{display:flex; align-items:center; gap:12px; min-width:220px}
+.brand{display:flex; align-items:center; gap:12px; min-width:260px}
 .dot{
   width:12px;height:12px;border-radius:999px;
   background:var(--accent);
@@ -117,7 +120,7 @@ p{margin:0}
 
 /* ===== Cards / panels ===== */
 .card{
-  background:var(--card);
+  background:linear-gradient(180deg,#fff, #fbfbfe);
   border:1px solid var(--line);
   border-radius:var(--radius2);
   box-shadow:var(--shadow);
@@ -125,7 +128,7 @@ p{margin:0}
 .panel{
   border:1px solid var(--line);
   border-radius:var(--radius2);
-  background:rgba(255,255,255,.72);
+  background:linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.75));
   padding:14px;
   margin-bottom:14px;
 }
@@ -360,4 +363,45 @@ input:focus-visible, select:focus-visible, textarea:focus-visible,
   .tab{padding:10px 12px;}
   .tab{font-size:0; line-height:0;}
   .tab::before{font-size:16px; line-height:1;}
+}
+
+
+.brand-mark{width:44px;height:44px;border-radius:14px;overflow:hidden;border:1px solid rgba(36,73,110,.12);background:#24496e;box-shadow:0 8px 18px rgba(17,33,51,.12)}
+.brand-mark img{width:100%;height:100%;object-fit:cover;object-position:top left;display:block;transform:scale(1.9);transform-origin:14% 15%}
+.brand-title{text-transform:uppercase; letter-spacing:.4px; line-height:1; font-size:18px; font-weight:950; color:var(--primary)}
+.brand-sub{font-size:11px; color:var(--muted); letter-spacing:.15px}
+.topbar::after{content:""; position:absolute; left:0; right:0; bottom:-1px; height:2px; background:linear-gradient(90deg, rgba(36,73,110,.75), rgba(61,143,176,.5), rgba(169,197,234,.2)); pointer-events:none}
+
+.btn-primary{box-shadow:0 10px 20px rgba(36,73,110,.18)}
+.btn-primary:hover{box-shadow:0 12px 24px rgba(36,73,110,.22)}
+.tab.is-active{box-shadow:0 8px 16px rgba(36,73,110,.18)}
+
+.login-card{position:relative; overflow:hidden; border-color:rgba(36,73,110,.12); box-shadow:0 20px 50px rgba(20,35,55,.10)}
+.login-card::before{content:""; position:absolute; inset:0 0 auto 0; height:118px; background:linear-gradient(135deg, rgba(36,73,110,.96), rgba(45,84,126,.95));}
+.login-card::after{content:""; position:absolute; top:0; right:-40px; width:180px; height:180px; background:radial-gradient(circle, rgba(169,197,234,.35), rgba(169,197,234,0)); pointer-events:none}
+.login-card > *{position:relative; z-index:1}
+.login-brand-hero{margin:-8px -8px 8px; padding:10px 12px 6px; border-radius:16px; background:rgba(255,255,255,.04)}
+.login-brand-hero img{display:block; width:100%; max-width:420px; border-radius:12px; object-fit:cover; object-position:top center; max-height:120px; margin:0 auto; box-shadow:0 10px 24px rgba(7,17,30,.22)}
+.login-badge{display:inline-flex; align-items:center; gap:8px; margin:2px 0 10px; padding:8px 12px; border-radius:999px; background:rgba(169,197,234,.18); border:1px solid rgba(169,197,234,.35); color:#d9ebff; font-size:12px; font-weight:700}
+.login-card h1{margin-top:4px; color:var(--primary)}
+.login-card .muted{color:#52667e}
+.login-card details.help{background:rgba(36,73,110,.03); border:1px dashed rgba(36,73,110,.14); padding:10px 12px; border-radius:14px}
+
+.footer{position:relative; background:linear-gradient(180deg, rgba(255,255,255,.6), rgba(238,242,248,.85)); font-size:13px}
+.footer b{color:var(--primary)}
+
+#viewTomar .actions{border-color:rgba(36,73,110,.10); box-shadow:0 18px 40px rgba(18,34,55,.14)}
+.student-card{border-color:rgba(36,73,110,.10); background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(251,252,255,.95))}
+.student-card::before{content:""; position:absolute; inset:0 0 auto 0; height:5px; background:linear-gradient(90deg, #24496e, #3d8fb0, #a9c6e8); border-radius:22px 22px 0 0}
+
+.report-preview{background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.82)); border-radius:18px}
+
+@media (max-width: 720px){
+  .brand{min-width:0; gap:10px}
+  .brand-sub{display:none}
+  .brand-mark{width:38px;height:38px;border-radius:12px}
+  .brand-title{font-size:15px}
+  .login-brand-hero img{max-height:90px}
+  .login-card::before{height:102px}
+  .login-badge{font-size:11px; padding:7px 10px}
 }
